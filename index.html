@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Ubay Mostafa">
+        <meta name="description" content="this page shows my skills in web development and design">
+        <title>Ubay's skill showcase</title>
+        <link rel="icon" href="logo.jpg">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/7b5e8f80e3.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+       <a id="top"></a>
+       <!-- off-canvas side menu -->
+       <nav class="side-menu" id="sideMenu" aria-hidden="true">
+           <button class="close-menu" id="closeMenu" aria-label="Close menu">&times;</button>
+           <ul>
+               <li><a href="#about">About</a></li>
+               <li><a href="#projects">Projects</a></li>
+               <li><a href="#skills">Skills</a></li>
+               <li><a href="#contact">Contact</a></li>
+           </ul>
+       </nav>
+       <div class="backdrop" id="menuBackdrop" hidden></div>
+
+       <!-- content that will shift/scale when menu opens -->
+       <div class="content">
+            <header>
+            <i class="fa-solid fa-bars"></i>
+            <div class="top-bar">
+                <i class="fa-solid fa-bars menu-btn" aria-label="Open menu" role="button" tabindex="0"></i>
+                <div class="top-bar">
+                    <div class="logo" role="img" aria-label="logo">
+                        <img src="logo.jpg" alt="Ubay logo">
+                    </div>
+                    <div class="logo" role="img" aria-label="logo">
+                       <a href="#top" aria-label="Go to home">
+                            <img src="logo.jpg" alt="Ubay logo">
+                        </a>
+                    </div>
+                 </div>
+             </header>
+             <main>
+                 <div class="top-hero" role="img" aria-label="background image">
+                    <!-- hero content: intro text (left) + coder image (right) -->
+                    <div class="hero-inner">
+                        <div class="intro" aria-live="polite">
+                            <h1>Hi, I'm Ubay — a new software developer</h1>
+                            <p class="lead">I build interactive web experiences and games. I'm passionate about clean UI, performance, and learning new tools.</p>
+                            <p>Experience: <span class="accent">HTML, CSS, JavaScript, Unity, C</span></p>
+                            <p class="cta">Interested in collaborating or seeing examples?
+                                <a class="btn" href="#projects">Check my projects</a>
+                                <a class="btn outline" href="#contact">Get in touch</a>
+                            </p>
+                        </div>
+                        <img class="coder" src="coder.png" alt="Coder illustration">
+                    </div>
+                    <!-- down-arrow hint -->
+                    <div class="scroll-arrow" aria-hidden="true"><span class="arrow">↓</span></div>
+                 </div>
+
+                <!-- About section -->
+                <section id="about" class="about-section" style="padding:48px 6%; color:#fff;">
+                    <h2>About Me</h2>
+                    <div class="about-inner" style="max-width:900px;">
+                        <p>I study Interaction and Design Engineering at Umeå University. I love learning and collaborating with people who are passionate about the same things I am — coding, web design and game design.</p>
+                        <p>I enjoy building interactive experiences, improving the user journey, and exploring creative solutions across web and games. If you'd like to collaborate or chat about projects, feel free to reach out.</p>
+                    </div>
+                </section>
+ 
+                <!-- Projects showcase -->
+                <section id="projects" class="projects-section">
+                    <h2>Projects</h2>
+                    <div class="project-grid">
+                        <article class="project-card"
+                            data-title="Space Runner (Game)"
+                            data-desc="A 3D parkour runner built in Unity using C#. Implements player controls, obstacles, scoring and tutorial."
+                            data-img="game.png">
+                            <img src="game.png" alt="Space Runner game screenshot">
+                            <div class="meta">
+                                <h3>Space Runner (Game)</h3>
+                                <p>An parkour runner game with responsive controls, obstacle spawning and score tracking. Built with Unity and C#.
+                                   <a href="https://gulfufu.itch.io/gulfufu" target="_blank" rel="noopener" class="btn outline" style="margin-left:8px;">Play on itch.io</a>
+                                </p>
+                                <button class="view-project" data-project="0">View details</button>
+                            </div>
+                        </article>
+                        <article class="project-card" data-title="Portfolio Website" data-desc="A responsive portfolio built with HTML, CSS and JavaScript. Features animations, accessible navigation and a contact flow." data-img="project-website.jpg">
+                            <img src="website.png" alt="Portfolio website screenshot">
+                            <div class="meta">
+                                <h3>Portfolio Website</h3>
+                                <p>A responsive site showcasing projects and contact options. Focus on accessibility, performance and clean UI.</p>
+                                <button class="view-project" data-project="1">View details</button>
+                            </div>
+                        </article>
+                        <article class="project-card" data-title="Figma UI Kit" data-desc="UI components and interactive prototypes designed in Figma. Includes responsive layouts, reusable components for fast prototyping." data-img="project-figma.jpg">
+                            <img src="figma.png" alt="Figma UI kit preview">
+                            <div class="meta">
+                                <h3>Figma Prototype</h3>
+                                <p>Design system and interactive prototypes for web and mobile, built as reusable components and responsive layouts.</p>
+                                <button class="view-project" data-project="2">View details</button>
+                            </div>
+                        </article>
+                     </div>
+                 </section>
+                 
+                 <!-- Skills section -->
+                 <section id="skills" class="skills-section">
+                     <h2>Skills</h2>
+                     <div class="skills-grid">
+                        <article class="skill-card">
+                            <img src="html.png" alt="HTML">
+                            <h4>HTML</h4>
+                            <p>Building semantic, structuring content for screen readers.</p>
+                        </article>
+                        <article class="skill-card">
+                            <img src="css.png" alt="CSS">
+                            <h4>CSS</h4>
+                            <p>Responsive layouts, animations and themeable design systems for consistent UI.</p>
+                        </article>
+                        <article class="skill-card">
+                            <img src="js.png" alt="JavaScript">
+                            <h4>JavaScript</h4>
+                            <p>event-driven interfaces, and JS patterns for interactivity and small apps.</p>
+                        </article>
+                        <article class="skill-card">
+                            <img src="unity.png" alt="Unity">
+                            <h4>Unity</h4>
+                            <p>interactive Prototype 2D/3D experiences, gameplay logic using Unity and C#.</p>
+                        </article>
+                        <article class="skill-card">
+                            <img src="c-language.png" alt="C / C#">
+                            <h4>C / C#</h4>
+                            <p>logical and performant code for game systems and algorithms. Experienced writing clean, maintainable C# for Unity.</p>
+                        </article>
+                     </div>
+                 </section>
+                 
+                 <!-- simple project modal -->
+                 <div id="projectModal" class="modal" hidden aria-hidden="true">
+                    <div class="modal-inner" role="dialog" aria-modal="true">
+                        <button class="modal-close" aria-label="Close project">&times;</button>
+                        <img class="modal-img" src="" alt="">
+                        <div class="modal-content">
+                            <h3 class="modal-title"></h3>
+                            <p class="modal-desc"></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact section (slider reveal) -->
+                <section id="contact" class="contact-section">
+                    <h2>Contact Me</h2>
+                    <div class="contact-slider" aria-live="polite">
+                        <p class="contact-instruction">Slide to reveal my email</p>
+                        <div class="slider-wrap" aria-hidden="false">
+                            <input id="revealSlider" type="range" min="0" max="100" value="0" aria-label="Slide to reveal email">
+                        </div>
+                        <div id="contactReveal" class="contact-reveal" aria-hidden="true">
+                            <p class="revealed-email">ubay.mostafa24@gmail.com</p>
+                            <div class="reveal-actions">
+                                <a id="revealMailBtn" class="btn" href="mailto:ubay.mostafa24@gmail.com?subject=Hello%20Ubay" role="button">Send email</a>
+                                <button id="revealReset" type="button" class="btn outline">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+ 
+             </main>
+             <footer class="site-footer">
+                 <div class="footer-inner" style="padding:18px 6%; color:#dcdcdc; text-align:center;">
+                     <p style="margin:0 0 6px 0;">© 2025 Ubay Haje Mostafa</p>
+                     <p style="margin:0;"><a href="mailto:ubay.mostafa24@gmail.com" style="color:#9ed79e; text-decoration:none;">ubay.mostafa24@gmail.com</a></p>
+                 </div>
+             </footer>
+       </div><!-- /.content -->
+       <script src="script.js"></script>
+     </body>
+ </html>
