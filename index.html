@@ -12,8 +12,8 @@
 
     </head>
     <body>
-       <a id="top"></a>
-       <!-- off-canvas side menu -->
+       
+       <!-- menu -->
        <nav class="side-menu" id="sideMenu" aria-hidden="true">
            <button class="close-menu" id="closeMenu" aria-label="Close menu">&times;</button>
            <ul>
@@ -25,16 +25,14 @@
        </nav>
        <div class="backdrop" id="menuBackdrop" hidden></div>
 
-       <!-- content that will shift/scale when menu opens -->
+       
        <div class="content">
             <header>
             <i class="fa-solid fa-bars"></i>
             <div class="top-bar">
-                <i class="fa-solid fa-bars menu-btn" aria-label="Open menu" role="button" tabindex="0"></i>
+               
                 <div class="top-bar">
-                    <div class="logo" role="img" aria-label="logo">
-                        <img src="logo.jpg" alt="Ubay logo">
-                    </div>
+
                     <div class="logo" role="img" aria-label="logo">
                        <a href="#top" aria-label="Go to home">
                             <img src="logo.jpg" alt="Ubay logo">
@@ -44,7 +42,7 @@
              </header>
              <main>
                  <div class="top-hero" role="img" aria-label="background image">
-                    <!-- hero content: intro text (left) + coder image (right) -->
+                    
                     <div class="hero-inner">
                         <div class="intro" aria-live="polite">
                             <h1>Hi, I'm Ubay — a new software developer</h1>
@@ -57,11 +55,11 @@
                         </div>
                         <img class="coder" src="coder.png" alt="Coder illustration">
                     </div>
-                    <!-- down-arrow hint -->
+                    
                     <div class="scroll-arrow" aria-hidden="true"><span class="arrow">↓</span></div>
                  </div>
 
-                <!-- About section -->
+                
                 <section id="about" class="about-section" style="padding:48px 6%; color:#fff;">
                     <h2>About Me</h2>
                     <div class="about-inner" style="max-width:900px;">
@@ -70,14 +68,11 @@
                     </div>
                 </section>
  
-                <!-- Projects showcase -->
+                <!-- Projects  -->
                 <section id="projects" class="projects-section">
                     <h2>Projects</h2>
                     <div class="project-grid">
-                        <article class="project-card"
-                            data-title="Space Runner (Game)"
-                            data-desc="A 3D parkour runner built in Unity using C#. Implements player controls, obstacles, scoring and tutorial."
-                            data-img="game.png">
+                        <article class="project-card">
                             <img src="game.png" alt="Space Runner game screenshot">
                             <div class="meta">
                                 <h3>Space Runner (Game)</h3>
@@ -87,7 +82,7 @@
                                 <button class="view-project" data-project="0">View details</button>
                             </div>
                         </article>
-                        <article class="project-card" data-title="Portfolio Website" data-desc="A responsive portfolio built with HTML, CSS and JavaScript. Features animations, accessible navigation and a contact flow." data-img="project-website.jpg">
+                        <article class="project-card">
                             <img src="website.png" alt="Portfolio website screenshot">
                             <div class="meta">
                                 <h3>Portfolio Website</h3>
@@ -95,7 +90,7 @@
                                 <button class="view-project" data-project="1">View details</button>
                             </div>
                         </article>
-                        <article class="project-card" data-title="Figma UI Kit" data-desc="UI components and interactive prototypes designed in Figma. Includes responsive layouts, reusable components for fast prototyping." data-img="project-figma.jpg">
+                        <article class="project-card">
                             <img src="figma.png" alt="Figma UI kit preview">
                             <div class="meta">
                                 <h3>Figma Prototype</h3>
@@ -106,7 +101,7 @@
                      </div>
                  </section>
                  
-                 <!-- Skills section -->
+                 <!-- Skills  -->
                  <section id="skills" class="skills-section">
                      <h2>Skills</h2>
                      <div class="skills-grid">
@@ -138,25 +133,14 @@
                      </div>
                  </section>
                  
-                 <!-- simple project modal -->
-                 <div id="projectModal" class="modal" hidden aria-hidden="true">
-                    <div class="modal-inner" role="dialog" aria-modal="true">
-                        <button class="modal-close" aria-label="Close project">&times;</button>
-                        <img class="modal-img" src="" alt="">
-                        <div class="modal-content">
-                            <h3 class="modal-title"></h3>
-                            <p class="modal-desc"></p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Contact section (slider reveal) -->
+
+                <!-- slider -->
                 <section id="contact" class="contact-section">
                     <h2>Contact Me</h2>
                     <div class="contact-slider" aria-live="polite">
                         <p class="contact-instruction">Slide to reveal my email</p>
                         <div class="slider-wrap" aria-hidden="false">
-                            <input id="revealSlider" type="range" min="0" max="100" value="0" aria-label="Slide to reveal email">
+                            <input id="revealSlider" type="range" min="0" max="100" value="10" aria-label="Slide to reveal email">
                         </div>
                         <div id="contactReveal" class="contact-reveal" aria-hidden="true">
                             <p class="revealed-email">ubay.mostafa24@gmail.com</p>
@@ -175,7 +159,7 @@
                      <p style="margin:0;"><a href="mailto:ubay.mostafa24@gmail.com" style="color:#9ed79e; text-decoration:none;">ubay.mostafa24@gmail.com</a></p>
                  </div>
              </footer>
-       </div><!-- /.content -->
+       </div>
        <script src="script.js"></script>
      </body>
  </html>
